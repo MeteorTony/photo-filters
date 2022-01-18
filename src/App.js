@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Slider from "./Slider.js";
 import SidebarItem from "./SidebarItem.js";
+import ImageUpload from "./ImageUpload";
 
 const DEFAULT_OPTIONS = [
   {
@@ -80,6 +81,7 @@ function App() {
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(0);
   const [options, setOptions] = useState(DEFAULT_OPTIONS);
   const selectedOption = options[selectedOptionIndex];
+  const [selectedImage, setSelectedImage] = useState(null);
 
   function handleSliderChange({ target }) {
     setOptions((prevOptions) => {
@@ -100,7 +102,11 @@ function App() {
 
   return (
     <div className="container">
-      <div className="main-image" style={getImageStyle()} />
+      <ImageUpload
+        image={selectedImage}
+        setImage={setSelectedImage}
+        imageStyle={getImageStyle()}
+      />
       <div className="sidebar">
         {options.map((option, index) => {
           return (

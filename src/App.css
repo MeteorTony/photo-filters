@@ -21,12 +21,16 @@ body {
 .main-image {
   /* corresponds to "image" in grid-template-area*/
   grid-area: image;
-  background-image: url("https://wallpapercave.com/wp/wp5768288.png");
-  width: 100%;
+  /* background-image: url("https://wallpapercave.com/wp/wp5768288.png"); */
+  /* width: 100%;
   height: 100%;
   background-position: top center;
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
 }
 
 .sidebar {
