@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/photo-filters/static/css/main.61c7cd3f.css",
+    "main.js": "/photo-filters/static/js/main.aa387a65.js",
+    "index.html": "/photo-filters/index.html",
+    "main.61c7cd3f.css.map": "/photo-filters/static/css/main.61c7cd3f.css.map",
+    "main.aa387a65.js.map": "/photo-filters/static/js/main.aa387a65.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61c7cd3f.css",
+    "static/js/main.aa387a65.js"
+  ]
+}
